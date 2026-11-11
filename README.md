@@ -6,10 +6,10 @@ I assessed OWASP Juice Shop v20.0.0, a deliberately vulnerable e-commerce applic
 
 | # | Test | Result | Impact |
 |---|------|--------|--------|
-| 1 | DOM-based XSS (search bar) | Exploited | Arbitrary JavaScript runs in the victim's browser |
-| 2 | IDOR (basket API) | Exploited | Any logged-in user can read other users' baskets |
-| 3 | JWT "none" algorithm bypass | Exploited | Forged admin token accepted without a signature |
-| 4 | Privilege escalation via registration | Not exploitable | Server ignored the injected role |
+| 1 | [DOM-based XSS (search bar)](#1-dom-based-xss-in-the-search-bar) | Exploited | Arbitrary JavaScript runs in the victim's browser |
+| 2 | [IDOR (basket API)](#2-idor-on-the-basket-api) | Exploited | Any logged-in user can read other users' baskets |
+| 3 | [JWT "none" algorithm bypass](#3-jwt-none-algorithm-bypass) | Exploited | Forged admin token accepted without a signature |
+| 4 | [Privilege escalation via registration](#4-privilege-escalation-at-registration-not-exploitable) | Not exploitable | Server ignored the injected role |
 
 ## Lab environment
 
